@@ -1,0 +1,25 @@
+{
+  "name": "redux-toolkit-persist",
+  "version": "1.0.0",
+  "description": "save store in local storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelien-gaillard/redux-toolkit-persist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurelien-gaillard/redux-toolkit-persist/issues"
+  },
+  "homepage": "https://github.com/aurelien-gaillard/redux-toolkit-persist#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.2",
+    "react": "^18.0.0",
+    "react-redux": "^7.2.8",
+    "typescript": "^4.6.3"
+  }
+}

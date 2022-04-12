@@ -1,0 +1,19 @@
+{
+  "name": "redux-toolkit-persist-monorepo",
+  "version": "1.0.0",
+  "description": "save store in local storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelien-gaillard/redux-toolkit-persist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurelien-gaillard/redux-toolkit-persist/issues"
+  },
+  "homepage": "https://github.com/aurelien-gaillard/redux-toolkit-persist#readme"
+}
