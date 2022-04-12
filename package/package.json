@@ -1,8 +1,8 @@
 {
   "name": "redux-toolkit-persist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "save store in local storage",
-  "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
@@ -27,5 +27,14 @@
     "rollup": "^2.70.1",
     "rollup-plugin-dts": "^4.2.1",
     "typescript": "^4.6.3"
-  }
+  },
+  "peerDependencies": {
+    "react-redux": "^7.2.8"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }
