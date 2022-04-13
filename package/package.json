@@ -1,6 +1,6 @@
 {
   "name": "redux-toolkit-persist",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Persist redux toolkit store in local storage",
   
   "scripts": {
@@ -30,8 +30,9 @@
     "typescript": "^4.6.3"
   },
   "peerDependencies": {
-    "react-redux": "^7.2.8"
-  },
+   "react": "17.0.2",
+   "react-dom": "17.0.2"
+ },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
