@@ -12,10 +12,10 @@ interface SavedConfig {
 
 export const loadState = (persistConfig: PersistConfig) => {
   try {
-    const previousConfig: SavedConfig = JSON.parse(
-      localStorage.getItem(PERSISTED_CONFIG) ?? ''
+    const previousConfig: SavedConfig | null = JSON.parse(
+      localStorage.getItem(PERSISTED_CONFIG) ?? 'null'
     )
-    const previousVersion = previousConfig.version
+    const previousVersion = previousConfig?.version
 
     // If the versions are not matching, return initial state status
     if (!previousVersion || persistConfig.version !== previousVersion) {
