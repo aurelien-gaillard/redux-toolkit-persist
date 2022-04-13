@@ -20,15 +20,24 @@ const App = () => {
 ```
 
 Inside store.ts file:
+Generally, we want to avoid saving ApiSlice from RTK-query.
+All the reducers that don't need to be persisted can be filled inside `excludedReducers`
 
 ```js
+import { loadState, PersistConfig } from 'redux-toolkit-persist'
+
+// We exclude the reducer 'api' from RTK-query
 export const persistConfig: PersistConfig = {
   version: 1,
   excludedReducers: ['api'],
 }
 
 export const store = configureStore({
-  reducer: reducers,
+  reducer: {
+    interface: interfaceReducer,
+    user: userReducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
+  },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(apiSlice.middleware),
   preloadedState: loadState(persistConfig),
