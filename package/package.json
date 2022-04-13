@@ -1,6 +1,6 @@
 {
   "name": "redux-toolkit-persist",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Persist redux toolkit store in local storage",
   
   "scripts": {
