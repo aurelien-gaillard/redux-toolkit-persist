@@ -1,6 +1,6 @@
 {
   "name": "redux-toolkit-persist",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Persist redux toolkit store in local storage",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
