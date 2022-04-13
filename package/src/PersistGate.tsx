@@ -1,13 +1,14 @@
 import React, { ReactNode, useEffect, useState } from 'react'
+import { useStore } from 'react-redux'
 import { PersistConfig, saveState } from './utils'
 
 interface Props {
   children: ReactNode
   persistConfig: PersistConfig
-  store: any
 }
 
-export const PersistGate = ({ children, persistConfig, store }: Props) => {
+export const PersistGate = ({ children, persistConfig }: Props) => {
+  const store = useStore()
   const [isFirstRender, setIsFirstRender] = useState(false)
 
   useEffect(() => {

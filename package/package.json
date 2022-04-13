@@ -1,8 +1,7 @@
 {
   "name": "redux-toolkit-persist",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Persist redux toolkit store in local storage",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
@@ -22,14 +21,15 @@
     "@rollup/plugin-node-resolve": "^13.2.0",
     "@rollup/plugin-typescript": "^8.3.1",
     "@types/react": "^17.0.43",
-    "react-redux": "^7.2.8",
     "rollup": "^2.70.1",
     "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^4.6.3"
   },
   "peerDependencies": {
-   "react": "17.0.2",
-   "react-dom": "17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.8"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
