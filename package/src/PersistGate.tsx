@@ -7,7 +7,7 @@ interface Props {
   persistConfig: PersistConfig
 }
 
-const PersistGate = ({ children, persistConfig }: Props) => {
+export const PersistGate = ({ children, persistConfig }: Props) => {
   const store = useStore()
   const [isFirstRender, setIsFirstRender] = useState(false)
 
@@ -35,5 +35,3 @@ const PersistGate = ({ children, persistConfig }: Props) => {
 
   return <>{children}</>
 }
-
-export default PersistGate
