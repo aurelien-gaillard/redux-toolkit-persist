@@ -1,6 +1,6 @@
 {
   "name": "redux-toolkit-persist",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Persist redux toolkit store in local storage",
   "keywords": [
     "redux",
@@ -34,7 +34,7 @@
   "peerDependencies": {
     "react": "^17.0 || ^18.0",
     "react-dom": "^17.0 || ^18.0",
-    "react-redux": "^7.0 || ^8.0"
+    "react-redux": "^7.0 || ^8.0 || ^9.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
